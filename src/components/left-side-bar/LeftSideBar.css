@@ -1,0 +1,102 @@
+#left-side-bar {
+  color: white;
+}
+
+#navTabs {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  height: 30px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+#navTabs>li {
+  z-index: 1;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  background-color: #2c3134;
+  height: 95%;
+  width: 44%;
+  border-bottom: none;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#navTabs>li:first-child {
+  left: calc((100% - 88%) / 4);
+}
+
+#navTabs>li:last-child {
+  right: calc((100% - 88%) / 4);
+}
+
+#navTabs::after {
+  content: '';
+  width: 44%;
+  height: 3px;
+  position: absolute;
+  background-color: white;
+  left: calc((100% - 88%) / 4);
+  z-index: 1;
+  top: 100%;
+  transition: all 0.17s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+}
+
+#navTabs.input::after {
+  left: calc((100% - 88%) / 4);
+}
+
+#navTabs.output::after {
+  left: calc(((100% - 88%) / 2) + 47%);
+}
+
+#navTabs>li>div {
+  display: block;
+  height: 100%;
+}
+
+#navTabs>li>div>span {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.content-wrap>section {
+  display: none;
+}
+
+.content-wrap>section.active {
+  display: block;
+  /* -webkit-animation: cd-fade-in 0.5s;
+  animation: cd-fade-in 0.5s; */
+}
+
+#input>.-input_fields>.-new_item {
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+}
+
+@-webkit-keyframes cd-fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes cd-fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

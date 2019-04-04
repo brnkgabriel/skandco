@@ -1,0 +1,23 @@
+<div id="left-side-bar" class="pos-abs">
+  <ul id="navTabs" class="pos-rel input">
+    <li class="input pos-abs active" @click="changeTab('input')">
+      <div class="pos-rel">
+        <span class="pos-abs">input</span>
+      </div>
+    </li>
+    <li class="output pos-abs" @click="changeTab('output')">
+      <div class="pos-rel">
+        <span class="pos-abs">output</span>
+      </div>
+    </li>
+  </ul>
+  <div class="content-wrap">
+    <section id="input" class="active">
+      <h2>Input</h2>
+      <div class="-input_fields pos-rel">
+        <div class="-new_item pos-abs" @click="newTextArea()"></div>
+      </div>
+    </section>
+    <section id="output">output section</section>
+  </div>
+</div>

@@ -1,0 +1,52 @@
+#flash-sales {
+  padding: 10px;
+}
+
+#flash-sales>.-banner,
+#flash-sales>.-terms {
+  background-color: #fff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.3)
+}
+
+#flash-sales>.-banner {
+  height: 95px;
+}
+
+#flash-sales>.-terms {
+  height: 29px;
+  width: 464px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+#flash-sales>.-tabs {
+  margin-top: 20px;
+  height: 50px;
+}
+
+#flash-sales>.-tabs>.-new_item {
+  background-color: white;
+}
+
+#flash-sales>.-tabs>.-tabs_container {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  border: 1px dashed gray;
+  width: 464px;
+  height: 40px;
+}
+
+#flash-sales>.-tabs>.-tabs_container>a {
+  display: inline-block;
+  vertical-align: middle;
+  width: calc(100% / 5.1);
+  background-color: white;
+  height: 40px;
+}
+
+#flash-sales>.-sku_sections {
+  height: 50px;
+  margin-top: 20px;
+  background-color: aqua;
+}

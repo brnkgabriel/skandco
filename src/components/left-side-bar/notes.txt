@@ -1,0 +1,7 @@
+input
+-----
+. clicking the plus button should create a new text area to paste the FlashSales, Treasure Hunt or Vouchers List
+. Each created text area should have a close button to remove it.
+. There should be a bar on top each text area to indicate the name of the page as well as the close button.
+. The moment the first text area is created a submit button should be created.
+. The moment the last text area is deleted the submit button should be removed.
