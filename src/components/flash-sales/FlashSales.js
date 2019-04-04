@@ -1,23 +1,14 @@
-
-import FlashSale from "./flash-sale/FlashSale.vue";
-import util from "../../utils.js";
+/* eslint-disable */
+import FlashSale from "./flash-sale/FlashSale.vue"
+import { bus } from '../../main'
+import util from "../../util.js"
 export default {
   data() {
     return {
-      flashSales: [],
-      cols: [],
-      skuNames: "",
-      oldPrices: "",
-      newPrices: "",
-      units: "",
-      saleTimes: "",
-      images: "",
-      soldOut: "",
-      containerId: ""
     };
   },
-  components: {
-    "flash-sale": FlashSale
+  beforeRouteEnter (to, from, next) {
+    bus.$emit('path', util.trimPath(to['path']));
   },
   mounted() {
     this.cols = document.querySelectorAll(".flash-sale");

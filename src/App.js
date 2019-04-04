@@ -1,4 +1,4 @@
-
+/* eslint-disable */
 import Navigation from './components/navigation/Navigation.vue'
 import LeftSideBar from './components/left-side-bar/LeftSideBar.vue'
 import RightSideBar from './components/right-side-bar/RightSideBar.vue'
@@ -16,5 +16,8 @@ export default {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
-  }
+  },
+  beforeRouteEnter (to, from, next) {
+    console.log('beforeRouteEnter called in vouchers')
+  },
 }

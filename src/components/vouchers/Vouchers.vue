@@ -1,15 +1,6 @@
-<template>
-  <div id="vouchers">
-    This is a list of vouchers
-  </div>
-</template>
 
-<script>
-export default {
-  
-}
-</script>
+<template src="./Vouchers.html"></template>
 
-<style scoped>
+<script src="./Vouchers.js"></script>
 
-</style>
+<style scoped src="./Vouchers.css"></style>

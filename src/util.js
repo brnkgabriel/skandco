@@ -1,5 +1,9 @@
 
 export default { 
+  trimPath: function (path) {
+    var trimmed = path.substring(1, path.length).split('-')
+    return trimmed.length === 2 ? trimmed[0] + ' ' + trimmed[1] : trimmed[0]
+  },
   handleDragStart: function (evt) {
     evt.target.style.opacity = '0.4';
     window.dragSrcEl = this;
