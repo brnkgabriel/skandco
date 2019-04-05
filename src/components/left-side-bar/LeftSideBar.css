@@ -1,5 +1,6 @@
 #left-side-bar {
   color: white;
+  overflow: auto;
 }
 
 #navTabs {
@@ -75,12 +76,50 @@
   /* -webkit-animation: cd-fade-in 0.5s;
   animation: cd-fade-in 0.5s; */
 }
+#input>.-input-fields_container {
+  padding-top: 10px;
+}
 
-#input>.-input_fields>.-new_item {
+#input>.-input-fields_container>.-new_item {
   top: 0%;
   left: 50%;
   transform: translateX(-50%);
   background-color: #fff;
+}
+
+#input>h2 {
+  text-transform: capitalize;
+}
+
+#input>.-input-fields_container>.-input_field {
+  margin-bottom: 10px;
+}
+
+#input>.-input-fields_container>.-input_field>.-top_pane {
+  height: 30px;
+  margin: 0 5%;
+  background-color: #2c3134;
+}
+
+#input>.-input-fields_container>.-input_field>.-top_pane>span {
+  top: 50%;
+  transform: translateY(-50%);
+}
+#input>.-input-fields_container>.-input_field>.-top_pane>span:first-child {
+  left: 5%;
+}
+#input>.-input-fields_container>.-input_field>.-top_pane>span:last-child {
+  right: 5%;
+}
+#input>.-input-fields_container>.-input_field>textarea {
+  padding: 0;
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  border: none;
+  outline: none;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
 }
 
 @-webkit-keyframes cd-fade-in {

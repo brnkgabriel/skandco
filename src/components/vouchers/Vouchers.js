@@ -2,8 +2,7 @@
 import { bus } from '../../main'
 import util from '../../util'
 export default {
-  
-  beforeRouteEnter (to, from, next) {
-    bus.$emit('path', util.trimPath(to['path']));
+  created () {
+    bus.$emit('path', util.trimPath(window.location.href));
   },
 }
