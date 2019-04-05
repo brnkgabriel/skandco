@@ -1,4 +1,5 @@
 <div id="left-side-bar" class="pos-abs">
+  <h2>{{path}}</h2>
   <ul id="navTabs" class="pos-rel input">
     <li class="input pos-abs active" @click="changeTab('input')">
       <div class="pos-rel">
@@ -13,12 +14,11 @@
   </ul>
   <div class="content-wrap">
     <section id="input" class="active">
-      <h2> {{path}} Input</h2>
+      <h2>Input Fields</h2>
       <div class="-input-fields_container pos-rel">
         <div class="-input_field" v-for="(field, index) in inputFields" :key="index">
           <div class="-top_pane pos-rel">
             <span class="pos-abs">{{field.name}}</span>
-            <span class="pos-abs">x</span>
           </div>
           <textarea name="" id="" cols="30" rows="10">text area</textarea>
         </div>

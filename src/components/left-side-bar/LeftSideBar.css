@@ -108,9 +108,7 @@
 #input>.-input-fields_container>.-input_field>.-top_pane>span:first-child {
   left: 5%;
 }
-#input>.-input-fields_container>.-input_field>.-top_pane>span:last-child {
-  right: 5%;
-}
+
 #input>.-input-fields_container>.-input_field>textarea {
   padding: 0;
   display: block;

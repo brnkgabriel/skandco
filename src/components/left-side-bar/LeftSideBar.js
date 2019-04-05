@@ -14,7 +14,7 @@ export default {
       this.inputFields = data[path].map(field => {
         return { name: field, list: [] }
       })
-      
+      console.log('this.inputFields', this.inputFields)
     })
   },
   methods: {
