@@ -1,6 +1,6 @@
 /* eslint-disable */
 import { bus } from '../../main'
-import data from '../../data'
+import data from '../database/data'
 export default {
   data () {
     return {
