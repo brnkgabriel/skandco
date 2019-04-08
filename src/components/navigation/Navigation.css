@@ -1,7 +1,9 @@
 #navigation {
   height: 40px;
   border-bottom: 1px solid rgba(0,0,0,0.2);
-  background-color: #3d474c;
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
 }
 
 .navigation-items {
@@ -24,17 +26,52 @@ a {
 }
 
 .logo {
-  left: 0;
+  left: 0%;
   top: 50%;
   transform: translateY(-50%);
+  width: 87.5px;
+  height: 40px;
+  background-color: #0070c0;
+  border-radius: 96px;
 }
 
-.logo>a>img,
-.logo>a>span {
-  display: inline-block;
-  vertical-align: middle;
+.logo>.red-wrap {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 80%;
+  height: 60%;
+  border-radius: 86.4px;
+  background-color: red;
+  border: 3px solid white;
 }
-.logo>a>img {
-  height: 90%;
-  max-height: 35px;
+
+.logo>.red-wrap>div {
+  width: 100%;
+  height: 100%;
+}
+
+.logo>.red-wrap>div>span {
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%,-50%);
+  font-size: 0.7em;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.description {
+  top: 50%;
+  transform: translateY(-50%);
+  left: 90px;
+}
+
+.description>span {
+  color: #0070c0;
+  text-transform: uppercase;
+  display: block;
+  font-size: 0.7em;
+  font-weight: 700;
+  text-align: left;
 }

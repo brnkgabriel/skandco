@@ -1,10 +1,12 @@
 /* eslint-disable */
 import FlashSale from "./flash-sale/FlashSale.vue"
 import { bus } from '../../main'
-import util from "../../util.js"
+import util from '../../util.js'
+import data from '../database/data'
 export default {
   data() {
     return {
+      skus: data.fsSkus
     };
   },
   created () {
@@ -23,6 +25,12 @@ export default {
     });
   },
   methods: {
+    image: function (src) {
+      return require('../../assets/' + src);
+    },
+    time: function (time) {
+      return util.get12HrsForm(new Date(time).getHours())
+    },
     processFSInputs: function() {
       console.log("sku names are", this.skuNames.split(util.codeRegEx).length);
       console.log("old prices are", this.skuNames.split(util.codeRegEx).length);
